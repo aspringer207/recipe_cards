@@ -1,0 +1,29 @@
+{
+  "name": "recipe_cards",
+  "version": "1.0.0",
+  "description": "A web app for interactive recipe cards",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "main"
+  },
+  "keywords": [
+    "sass",
+    "typescript",
+    "recipes",
+    "recipe",
+    "cards"
+  ],
+  "author": "Andrea Springer",
+  "license": "GPL-3.0",
+  "type": "module",
+  "devDependencies": {
+    "@types/js-quantities": "^1.6.6",
+    "js-quantities": "^1.8.0",
+    "sass": "^1.86.3",
+    "typescript": "^5.8.3"
+  }
+}
