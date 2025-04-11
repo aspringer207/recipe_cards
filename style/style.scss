@@ -1,0 +1,62 @@
+$black: #1d1916;
+$cream: #fff5d6;
+$lime: #bffe7c;
+$lemon: #f1dc6e;
+$orange: #da8667;
+$pink: #b96980;
+$purple: #976d91;
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Gloock&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap");
+
+@mixin heading-font {
+  font-family: "Gloock", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@mixin math-font {
+  font-family: "STIX Two Text", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin body-font {
+  font-family: "Crimson Pro", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include heading-font;
+  color: $black;
+}
+math {
+  @include math-font;
+}
+body {
+  @include math-font;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12,1fr);
+  .card {
+    grid-column: span 6;
+    box-shadow: 3px 3px 5px #1d1916cc;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+    
+    ol{
+      grid-column: 1/3;
+
+    }
+    ul{
+      grid-column: 4 / 6;
+    }
+  }
+}
