@@ -1,0 +1,3 @@
+{
+    "compilerOptions": {"strict": true, "forceConsistentCasingInFileNames": true, "rootDir": "./source", "outDir": "./dist", "esModuleInterop": true, "lib": ["DOM", "ES2022"]}, "compileOnSave": true
+}
